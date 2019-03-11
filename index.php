@@ -23,32 +23,34 @@
   <p> The answer is: </p>
   <?php
 // isset = waarde halen van bvb form, button etc
-  if(isset($_GET['submit'])){
+  if(isset($_GET['submit']))  {
     $result1 = $_GET['num1'];
     $result2 = $_GET['num2'];
     $operater = $_GET['operator'];
+  
     switch($operater) {
-      case None: 
+      case "None": 
           echo 'You need to select a method';
       break;
-      case Add: 
+      case "Add": 
           echo $result1 + $result2;
       break;
-      case Subtract: 
+      case "Subtract": 
           echo $result1 - $result2;
       break;
-      case Multiply: 
+      case "Multiply": 
           echo $result1 * $result2;
       break;
-      case Divide: 
+      case "Divide": 
           echo $result1 / $result2;
       break;
  
-  }
+  }}
 
-  ?>
-
+  
+?>
 
 
 </body>
+
 </html>
